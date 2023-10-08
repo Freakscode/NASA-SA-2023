@@ -18,6 +18,7 @@ export default function Demo() {
       {/* Primera fila con 3 columnas */}
       <div className="grid grid-cols-3 gap-8 mt-4">
         {/* Columna 1 */}
+        
         <ImgHover
           imageUrl="/imgs/STScI-01GW30QM3C2WX3VHPP1A67X48W.png"
           audioUrl="/audios/Blue_Planet.wav"
