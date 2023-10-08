@@ -25,3 +25,59 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.rounded-image {
+  width: 200px; /* Ajusta el tamaño de la circunferencia según tus necesidades */
+  height: 200px;
+  border-radius: 50%; /* Esto hace que la imagen sea circular */
+  overflow: hidden; /* Recorta cualquier contenido que se desborde de la circunferencia */
+}
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el video detrás de otros elementos */
+}
+
+.video-background video {
+  object-fit: cover; /* Ajusta la relación de aspecto del video para cubrir todo el fondo */
+  width: 100%;
+  height: 100%;
+}
+
+.custom-color-1 {
+  color: rgb(158, 181, 245);
+}
+
+.menu-item-hover:hover {
+  color: rgb(158, 181, 245);
+}
+
+.custom-color-2 {
+  color: rgb(224, 245, 255);
+}
+
+
+/* Estilo para ocultar el div de dos columnas */
+.hidden {
+  display: none;
+}
+
+/* Estilo para aplicar opacidad a las imágenes/videos */
+img,
+video {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Estilo para aplicar opacidad reducida al hacer hover en el elemento */
+.group:hover img,
+.group:hover video {
+  opacity: 0.8;
+}
+
+.text-black {
+  color: black;
+}
